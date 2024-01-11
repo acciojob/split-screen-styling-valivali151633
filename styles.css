@@ -1,60 +1,41 @@
-/*  your css code here. If applicable */
 *{
-	padding:none;
-	margin:none;
+	margin:0px;
 }
-.layout{
+.main-container{
+	display:flex;
 	width:100vw;
 	height:100vh;
-	display:grid;
-	grid-template-columns:1fr 5fr;
-	grid-template-areas:
-	"n m";
-	border:1px solid black;
+	border:1px solid red;
+}
+.nav-bar{
+	felx:1 / 6;
+	background-color:#D7E8D4 ;
+	padding: 1em;
+}
+.main-content{
+  flex: 5 / 6;
+  display: flex;
+  flex-direction: column;
 	
 }
-.nav{
-	grid-area:n;
-	background-color:#D7E8D4;
-	/* color:blue; */
-	padding:1em;
-	
+.header,
+.footer {
+  background-color: yellowgreen;
+  flex: 1 / 5;
+  padding: 1em;
 }
-.content{
-	grid-area:m;
-	display:grid;
-	grid-template-columns:(4 , 1fr);
-	grid-template-rows:repeat(5 , 1fr);
-	grid-template-areas: 
-    "h h h h"
-	"a a a s"
-	"a a a s"
-	"a a a s"
-	"f f f f";
-}
-.header{
-	grid-area:h;
-	background-color:yellowgreen;
-	padding:1em;
-	
-}
-.article{
-	grid-area:a;
-	background-color:#ffffff;
-	padding:1em;
-	
-	
-}
-.aside{
-	grid-area:s;
-	background-color:#f5f5dc;
-	padding:1em;
-}
-.footer{
-	grid-area:f;
-	background-color:yellowgreen;
-	padding:1em;
+content-section {
+  flex: 4 / 5;
+  display: flex;
 }
 
+.article-section {
+  flex: 3 / 4;
+  min-height: 60vh;
+  padding: 1em;
+}
 
-
+.aside-section {
+  flex: 1 / 4;
+  padding: 1em;
+}
