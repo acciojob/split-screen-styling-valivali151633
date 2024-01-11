@@ -13,14 +13,14 @@
 	border:1px solid black;
 	
 }
-.navigation-bar{
+.nav{
 	grid-area:n;
 	background-color:#D7E8D4;
 	/* color:blue; */
 	padding:1em;
 	
 }
-.main-content{
+.content{
 	grid-area:m;
 	display:grid;
 	grid-template-columns:(4 , 1fr);
