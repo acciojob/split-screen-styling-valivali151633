@@ -1,1 +1,60 @@
 /*  your css code here. If applicable */
+*{
+	padding:none;
+	margin:none;
+}
+.layout{
+	width:100vw;
+	height:100vh;
+	display:grid;
+	grid-template-columns:1fr 5fr;
+	grid-template-areas:
+	"n m";
+	border:1px solid black;
+	
+}
+.navigation-bar{
+	grid-area:n;
+	background-color:#D7E8D4;
+	/* color:blue; */
+	padding:1em;
+	
+}
+.main-content{
+	grid-area:m;
+	display:grid;
+	grid-template-columns:(4 , 1fr);
+	grid-template-rows:repeat(5 , 1fr);
+	grid-template-areas: 
+    "h h h h"
+	"a a a s"
+	"a a a s"
+	"a a a s"
+	"f f f f";
+}
+.header{
+	grid-area:h;
+	background-color:yellowgreen;
+	padding:1em;
+	
+}
+.article{
+	grid-area:a;
+	background-color:#ffffff;
+	padding:1em;
+	
+	
+}
+.aside{
+	grid-area:s;
+	background-color:#f5f5dc;
+	padding:1em;
+}
+.footer{
+	grid-area:f;
+	background-color:yellowgreen;
+	padding:1em;
+}
+
+
+
