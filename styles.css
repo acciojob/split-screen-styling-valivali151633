@@ -8,34 +8,39 @@
 	border:1px solid red;
 }
 .nav-bar{
-	felx:1 / 6;
+	felx:1fr;
 	background-color:#D7E8D4 ;
 	padding: 1em;
 }
 .main-content{
-  flex: 5 / 6;
+  flex: 5fr;
   display: flex;
   flex-direction: column;
+	width:100%;
+	height:100%;
+	
 	
 }
 .header,
 .footer {
   background-color: yellowgreen;
-  flex: 1 / 5;
+  flex: 1fr;
   padding: 1em;
 }
-content-section {
-  flex: 4 / 5;
+.content-section {
+  flex: 3fr;
   display: flex;
+	justify-content:space-between
 }
 
-.article-section {
-  flex: 3 / 4;
+.content-section > article {
+  flex: 3;
+  width:
   min-height: 60vh;
   padding: 1em;
 }
 
-.aside-section {
+.content-section > aside {
   flex: 1 / 4;
   padding: 1em;
 }
