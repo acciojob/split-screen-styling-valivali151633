@@ -6,7 +6,9 @@ body {
 .container {
     display: flex;
 	width:100vw;
-	height:100vh
+	height:100vh;
+	border:1px solid blue;
+	box-sizing:boredr-box
 }
 
 .sidebar {
@@ -19,27 +21,35 @@ body {
     display: flex;
     flex-direction: column;
     flex: 5/6;
+	width:100%;
+	height:100%
 }
 
 .header, .footer {
     background-color: yellowgreen;
     flex: 1/5;
     padding: 1em;
+	
+	height:100%;
+	
 }
 
 .content {
     display: flex;
     flex: 4/5;
-    padding: 1em;
+    
 }
 
 .article-section {
     flex: 3/4;
     min-height: 60vh;
     padding: 1em;
+	width:100%;
 }
 
 .aside-section {
     flex: 1/4;
     padding: 1em;
+	background-color:#f5f5dc;
+	
 }
