@@ -1,4 +1,4 @@
-body {
+/* body {
     margin: 0;
     font-family: Arial, sans-serif;
 }
@@ -52,4 +52,39 @@ body {
     padding: 1em;
 	background-color:#f5f5dc;
 	
+}*/
+
+
+
+body{
+	display:flex;
 }
+nav{
+	width:16.66vw;
+	background-color:#D7E8D4;
+	padding: 1em;
+}
+
+header,footer{
+	background-color:yellowgreen;
+	height: 20vh;
+	padding: 1em;
+}
+.content{
+	flex:4;
+	display:flex;
+	width:80vw;
+}
+.content article{
+	flex:3;
+	min-height:60vh;
+	width: 3/4*100vw;
+	padding: 1em;
+}
+.content aside{
+	background-color:#f5f5dc;
+	flex:1;
+	width:1/4*100vw;
+	padding: 1em;
+}
+ 
